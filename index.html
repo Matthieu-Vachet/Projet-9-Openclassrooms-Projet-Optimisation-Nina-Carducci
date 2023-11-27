@@ -46,15 +46,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<!-- Font Awesome -->
-	<script src="https://kit.fontawesome.com/2ab0c45394.js" crossorigin="anonymous" defer></script>
+	<script defer src="https://kit.fontawesome.com/2ab0c45394.js" crossorigin="anonymous"></script>
 
     <!-- Preload Images -->
-    <link rel="preload" href="./assets/images/slider/Portrait_ryoji_iwata.webp" as="image">
-    <link rel="preload" href="./assets/images/slider/Concert_nicholas_green.webp" as="image">
-    <link rel="preload" href="./assets/images/slider/Mariage_Edward_Cisneros.webp" as="image">
+    <link rel="preload" href="./assets/images/slider/Portrait_ryoji_iwata_1920.webp" as="image">
+    <link rel="preload" href="./assets/images/slider/Concert_nicholas_green_1920.webp" as="image">
+    <link rel="preload" href="./assets/images/slider/Mariage_Edward_Cisneros_1920.webp" as="image">
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- Custom Scripts -->
     <script defer src="./assets/maugallery.js"></script>
@@ -125,16 +125,64 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/Portrait_ryoji_iwata.webp" class="d-block w-100 h-auto"
-							alt="Photographie d'une personne qui traverse sur un passage piéton">
+						<img src="./assets/images/slider/Portrait_ryoji_iwata_1920.webp" class="d-block w-100 h-auto"
+							alt="Photographie d'une personne qui traverse sur un passage piéton"
+							srcset="
+								./assets/images/slider/Portrait_ryoji_iwata_375.webp 375w,
+								./assets/images/slider/Portrait_ryoji_iwata_768.webp 768w,
+								./assets/images/slider/Portrait_ryoji_iwata_1024.webp 1024w,
+								./assets/images/slider/Portrait_ryoji_iwata_1440.webp 1440w,
+								./assets/images/slider/Portrait_ryoji_iwata_1920.webp 1920w,
+								./assets/images/slider/Portrait_ryoji_iwata_2048.webp 2048w"
+							sizes="
+								(max-width: 375px) 375px,
+								(max-width: 768px) 768px,
+								(max-width: 1024px) 1024px,
+								(max-width: 1440px) 1440px,
+								(max-width: 1920px) 1920px,
+								(max-width: 2048px) 2048px,
+								100vw"
+							>
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/Concert_nicholas_green.webp" class="d-block w-100 h-auto"
-							alt="Photographie de jeunes pendant un concert">
+						<img loading="lazy" src="./assets/images/slider/Concert_nicholas_green_1920.webp" class="d-block w-100 h-auto"
+							alt="Photographie de jeunes pendant un concert"
+							srcset="
+								./assets/images/slider/Concert_nicholas_green_375.webp 375w,
+								./assets/images/slider/Concert_nicholas_green_768.webp 768w,
+								./assets/images/slider/Concert_nicholas_green_1024.webp 1024w,
+								./assets/images/slider/Concert_nicholas_green_1440.webp 1440w,
+								./assets/images/slider/Concert_nicholas_green_1920.webp 1920w,
+								./assets/images/slider/Concert_nicholas_green_2048.webp 2048w"
+							sizes="
+								(max-width: 375px) 375px,
+								(max-width: 768px) 768px,
+								(max-width: 1024px) 1024px,
+								(max-width: 1440px) 1440px,
+								(max-width: 1920px) 1920px,
+								(max-width: 2048px) 2048px,
+								100vw"
+							>
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/Mariage_Edward_Cisneros.webp" class="d-block w-100 h-auto"
-							alt="Photo de mariage d'un couple danssant">
+						<img loading="lazy" src="./assets/images/slider/Mariage_Edward_Cisneros_1920.webp" class="d-block w-100 h-auto"
+							alt="Photo de mariage d'un couple danssant"
+							srcset="
+								./assets/images/slider/Mariage_Edward_Cisneros_375.webp 375w,
+								./assets/images/slider/Mariage_Edward_Cisneros_768.webp 768w,
+								./assets/images/slider/Mariage_Edward_Cisneros_1024.webp 1024w,
+								./assets/images/slider/Mariage_Edward_Cisneros_1440.webp 1440w,
+								./assets/images/slider/Mariage_Edward_Cisneros_1920.webp 1920w,
+								./assets/images/slider/Mariage_Edward_Cisneros_2048.webp 2048w"
+							sizes="
+								(max-width: 375px) 375px,
+								(max-width: 768px) 768px,
+								(max-width: 1024px) 1024px,
+								(max-width: 1440px) 1440px,
+								(max-width: 1920px) 1920px,
+								(max-width: 2048px) 2048px,
+								100vw"	
+							>
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -153,7 +201,7 @@
 	<main>
 		<div id="about">
 			<div class="picture left">
-				<img src="./assets/images/Nina_Carducci.webp" alt="Photo de la photographe professionnel Nina Carducci">
+				<img loading="lazy" src="./assets/images/Nina_Carducci.webp" alt="Photo de la photographe professionnel Nina Carducci">
 			</div>
 			<article id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -176,31 +224,31 @@
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item"
+					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/concerts/Concert_Aaron_Paul.webp"
 						alt="Photographie d'une sale de concert d'aaron paul">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/entreprise/Ali_Morshedlou.webp"
 						alt="Photographie du directeur d'entreprise Ali Morshedlou">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/entreprise/Jason_Goodman.webp"
 						alt="Photographie d'emploier d'entreprise pendant une reunions">
-					<img data-gallery-tag="Mariages" class="gallery-item"
+					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/mariage/Mariage_Hannah_Busing.webp"
 						alt="Photographie de main d'un mariage">
-					<img data-gallery-tag="Portrait" class="gallery-item"
+					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/portraits/Portrait_Ade_Tunji.webp"
 						alt="Photographie d'un portrait d'ade tunji">
-					<img data-gallery-tag="Mariages" class="gallery-item"
+					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/mariage/Mariage_jakob_owens.webp"
 						alt="Photographie d'un couple marié devant un palmier">
-					<img data-gallery-tag="Portrait" class="gallery-item"
+					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/portraits/Portrait_Nino_Van_Prattenburg.webp"
 						alt="Photographie d'un portrait de nino van prattenburg">
-					<img data-gallery-tag="Concert" class="gallery-item"
+					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/concerts/Concert_Austin_Neill.webp"
 						alt="Photographie d'un concert d'austin neill">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 						src="./assets/images/gallery/entreprise/Mateus_Campos.webp"
 						alt="Photographie d'une emploier d'entreprise souriant">
 				</div>
@@ -300,7 +348,7 @@
 					</div>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/camera.webp" alt="photographie d'une caméra vintage">
+					<img loading="lazy" src="./assets/images/camera.webp" alt="photographie d'une caméra vintage">
 				</div>
 			</div>
 		</div>
